@@ -1,10 +1,10 @@
-RAILS_DEFAULT_LOGGER.info ">> Adding web-to-lead Fat Free CRM plugin..."
+RAILS_DEFAULT_LOGGER.info ">> Adding Olark Integration Fat Free CRM plugin..."
 
-FatFreeCRM::Plugin.register(:web_to_lead) do
-         name "Web-to-lead Capture Fat Free CRM Plugin"
-       author "Michael Dvorkin"
+FatFreeCRM::Plugin.register(:olark_integration) do
+         name "Olark Webhook Integration for Fat Free CRM "
+       author "Russell Osborne"
       version "1.0"
-  description "Create Fat Free CRM leads from the data submitted via remote web form."
+  description "Create Fat Free CRM leads from the !lead command."
 end
 
-require "crm_web_to_lead.rb"
+require "crm_olark_integration.rb"
